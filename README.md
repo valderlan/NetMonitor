@@ -11,8 +11,8 @@ This project is about capturing packets flow through a network interface,
 The CSV is meant to be analysed for intrusion detection.
 You can find further detail at the [website of CIC](http://www.unb.ca/cic).
 
-* This repository is maintained Pasakorn Tiwatthanont, <ptiwatthanont@gmail.com>.
-* Thank you for guiding relevant tools to Mr. Preecha Pangsuban <preecha@yru.ac.th>.
+* This repository is maintained Pasakorn Tiwatthanont, <>.
+* Thank you for guiding relevant tools to Mr. Preecha Pangsuban <>.
 
 
 <!------------------------------------------------------------------------------------------------->
