@@ -1,19 +1,13 @@
 
 <!------------------------------------------------------------------------------------------------->
-# Introduction
+# Introdução
 <!------------------------------------------------------------------------------------------------->
 
-This project is about capturing packets flow through a network interface,
-    save each specific-size chunk into a PCAP file,
-    and then automatically convert it to the feature-extracted CSV file by
-    CICFlowMeter-3.0.
+Este projeto trata da captura do fluxo de pacotes por meio de uma interface de rede, salva cada fragmento de tamanho específico em um arquivo PCAP e, em seguida, converte-o automaticamente no arquivo CSV extraído do recurso pelo CICFlowMeter-4.0.
+Este projeto foi clonado da [fonte (source)](https://github.com/iPAS/TCPDUMP_and_CICFlowMeter), onde foram feitas modificações para o seu adaquado na minha aplicação. 
 
-The CSV is meant to be analysed for intrusion detection.
-You can find further detail at the [website of CIC](http://www.unb.ca/cic).
 
-* This repository is maintained Pasakorn Tiwatthanont, <>.
-* Thank you for guiding relevant tools to Mr. Preecha Pangsuban <>.
-
+Ferramentas utilizadas aqui são TCPdump e [CICFlowMeter](https://www.unb.ca/cic/research/applications.html#CICFlowMeter) 
 
 <!------------------------------------------------------------------------------------------------->
 # Usage
