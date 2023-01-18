@@ -50,5 +50,10 @@ post_rotate_command="${script_dir}"/convert_pcap_csv.sh
 
 sudo tcpdump ${options} -z "${post_rotate_command}" -i ${interface} -G ${rotate_interval} -w "${output_file_format}"
 
+# -z postrotate-command
+# Observe que o tcpdump executará o comando paralelamente à captura, usando a prioridade mais baixa para que isso não perturbe o processo de captura.
+# E caso você queira usar um comando que aceite bandeiras ou argumentos diferentes, você sempre pode escrever um shell script que use o 
+# nome do arquivo de salvamento como o único argumento, faça as bandeiras &argumentos e execute o comando que você deseja.
+
 #sudo chown 1000:1000 "${output_dir}"/*
 
