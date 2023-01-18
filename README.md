@@ -10,17 +10,8 @@ Este projeto foi clonado da [fonte (source)](https://github.com/iPAS/TCPDUMP_and
 Ferramentas utilizadas aqui são __TCPdump__ e [CICFlowMeter](https://www.unb.ca/cic/research/applications.html#CICFlowMeter) 
 
 <!------------------------------------------------------------------------------------------------->
-# Usage
+# Uso
 <!------------------------------------------------------------------------------------------------->
-
-## Quick Start
-
-For trying, just run:
-
-```bash
-try_me.sh
-```
-
 
 ## Para Executar
 
