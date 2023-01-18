@@ -22,25 +22,22 @@ try_me.sh
 ```
 
 
-## To Run Literally
+## Para Executar
 
-Calling __capture_interface_pcap.sh__ will capture the packets since the beginning
-    until specific time in the script, periodically.
-Each time that PCAP file is saved,
-    the script __convert_pcap_csv.sh__ will be called the converter, __CICFlowMeter__.
-
+Chamar __capture_interface_pcap.sh__ irá capturar os pacotes desde o início até um horário específico no script, periodicamente. 
+Cada vez que o arquivo PCAP é salvo, o script __convert_pcap_csv.sh__ será chamado de conversor, __CICFlowMeter__.
 
 ```bash
 capture_interface_pcap.sh <interface> <pcap_output_dir> [priviledged_user_name]
 ```
 
-For example:
+Por exemplo:
 
 ```bash
 capture_interface_pcap.sh wlan0 pcap
 ```
 
-or
+ou
 
 ```bash
 capture_interface_pcap.sh eth0 output_dir bobuser
