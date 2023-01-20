@@ -36,7 +36,8 @@ echo "    Output dir: ${output_dir}"
 
 # CICFlowMeter-3.0/bin/CICFlowMeter
 # cic="${script_dir}"/CICFlowMeters/CICFlowMeter-3.0/bin/CICFlowMeter
-cic="${script_dir}"/CICFlowMeters/CICFlowMeter-4.0/bin/CICFlowMeter
+# cic="${script_dir}"/CICFlowMeters/CICFlowMeter-4.0/bin/CICFlowMeter
+cic="${script_dir}"/CICFlowMeters/CICFlowMeterv4/bin/CICFlowMeter
 
 "${cic}" "${pcap_file}" "${output_dir}"
 
