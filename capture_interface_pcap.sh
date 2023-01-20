@@ -53,7 +53,7 @@ sudo tcpdump ${options} -z "${post_rotate_command}" -i ${interface} -G ${rotate_
 # -z postrotate-command
 # Observe que o tcpdump executará o comando paralelamente à captura, usando a prioridade mais baixa para que isso não perturbe o processo de captura.
 # E caso você queira usar um comando que aceite flags ou argumentos diferentes, você sempre pode escrever um shell script que use o 
-# nome do arquivo de salvamento como o único argumento, faça as bandeiras &argumentos e execute o comando que você deseja.
+# nome do arquivo de salvamento como o único argumento, faça as flags & argumentos e execute o comando que você deseja.
 # -G rotate_seconds
 # Se especificado, gira o arquivo de despejo especificado com a opção -w a cada rotate_seconds segundos. 
 # Os arquivos de salvamento têm o nome especificado por -w, que deve incluir um formato de hora, conforme definido por strftime . 
