@@ -1,6 +1,8 @@
 import csv
 import json
 import os
+#import shutil
+#from tkinter.filedialog import askdirectory
 
 def csv_to_json(csvFilePath, jsonFilePath):
     jsonArray = []
@@ -14,18 +16,16 @@ def csv_to_json(csvFilePath, jsonFilePath):
             # adicione este dict python ao array json
             jsonArray.append(row)
     # converter python jsonArray para JSON String e gravar no arquivo
-    with open(jsonFilePath, 'w',encoding='utf-8') as jsonf:
+    #my_dir ='../valderlan/NetMonitor/CICFlowMeters/CICFlowMeterv4/bin/json/'
+    #fname=os.path.join(my_dir,jsonFilePath)
+    with open("../json/"+jsonFilePath, 'w',encoding='utf-8') as jsonf:
         jsonString = json.dumps(jsonArray,indent=4)
         jsonf.write(jsonString)
+        #print(jsonFilePath)
+        #save_file = str(askdirectory(initialdir="~/valderlan/NetMonitor/CICFlowMeters/CICFlowMeterv4/bin/json/"))
+        #shutil.move(jsonFilePath,save_file)
 
-
-
-#csvFilePath = r'data.csv'
-#jsonFilePath = r'.data1.json'
-
-#csv_to_json(csvFilePath, jsonFilePath)
-
-root, dirs, arquivos = next(os.walk("./csv/"))#'.'
+root, dirs, arquivos = next(os.walk("."))#'.'
 # root : Imprime diretórios apenas do que você especificou.
 # dirs : Imprime subdiretórios da raiz.
 # arquivos : Imprime todos os arquivos da raiz e diretórios.
@@ -33,19 +33,14 @@ extensoes = ['csv']
 #arquivos = os.listdir(pasta)
 #print(root)
 for i in arquivos:
-    #print(i)
-    nome, meio, fim=str(i).split(".")
-    #print(nome + '.json')
-    #jsonFilePath = nome + '.json' 
-    #print(jsonFilePath)
-    #cisvFlePath = i
-    #print(cisvFlePath)
+    
     if extensoes == []:
         print(i)
-    csvFilePath = i
-    jsonFilePath = nome + '.json'
-    csv_to_json(csvFilePath, jsonFilePath)
-    '''else:
+    else:
         extensao = i.split('.')[-1]
         if extensao in extensoes:
-            print(i)'''
+            nome, meio, fim=str(i).split(".")
+            csvFilePath = i
+            jsonFilePath = nome + '.json'
+            csv_to_json(csvFilePath, jsonFilePath)
+            
